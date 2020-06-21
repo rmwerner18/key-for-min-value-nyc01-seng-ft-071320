@@ -7,7 +7,7 @@ def key_for_min_value(name_hash)
   name_hash.each do |key, value|
     if value.to_i < min_value
       min_value = value.to_i
-      answer = :key
+      answer = key
     end
   end
   answer 
