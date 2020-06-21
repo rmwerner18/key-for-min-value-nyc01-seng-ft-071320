@@ -3,11 +3,11 @@
 
 def key_for_min_value(name_hash)
   answer = ""
-  min_value = name_hash[0].to_i
+  min_value = 100
   name_hash.each do |key, value|
     if value.to_i < min_value
       min_value = value.to_i
-      answer = key
+      answer = :key
     end
   end
 end
